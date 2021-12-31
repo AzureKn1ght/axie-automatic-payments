@@ -4,13 +4,13 @@ A fork of Axie Scholars Utilities
 
 # How to Use
 
-*   Create a folder called "files" 
+*   Create a folder called "files"
 
 ```
 axie-scholar-utilities/docker/files
 ```
 
-*   Download or create "payments.json" and put it in "files" 
+*   Download or create "payments.json" and put it in "files"
 
 ```
 https://tracker.axie.management/payments
@@ -31,7 +31,5 @@ docker-compose run scholar-utilities claim files/payments.json files/secrets.jso
 *   Do all the payments automatically, or 1 by 1. (open terminal in "axie-scholar-utilities/docker")
 
 ```
-docker-compose run scholar-utilities payout files/payments.json files/secrets.json
-OR
 docker-compose run scholar-utilities payout files/payments.json files/secrets.json -y
 ```
