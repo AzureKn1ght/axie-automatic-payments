@@ -1,0 +1,20 @@
+version: '3.7'
+
+services:
+  scholar-utilities:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile 
+      target: production
+    volumes:
+      - ../docker/files:/opt/app/files
+      - ../docker/files/logs:/opt/app/logs
+    image: axie-scholar-utilities
+  tests:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile 
+      target: tests
+    volumes:
+      - ../source/:/opt/app/
+      - ../source/logs:/opt/app/logs
