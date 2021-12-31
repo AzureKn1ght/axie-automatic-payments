@@ -130,3 +130,6 @@ dmypy.json
 
 # Axie Payment Files
 axie-scholar-utilities/docker/files
+axie-scholar-utilities/docker/files/
+axie-scholar-utilities/docker/files/payments.json
+axie-scholar-utilities/docker/files/secrets.json
