@@ -129,3 +129,4 @@ dmypy.json
 .pyre/
 
 # Axie Payment Files
+axie-scholar-utilities/docker/files
